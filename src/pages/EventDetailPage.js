@@ -40,7 +40,7 @@ const EventDetailPage = () => {
       <>
         <h2>Meet Ups</h2>
         <section className="event_details_container">
-          <div className="container">
+          <div className="container-one">
             <div>
               <h3>{title}</h3>
               <p>Hosted By: {hostedBy}</p>
@@ -84,7 +84,7 @@ const EventDetailPage = () => {
               )}
             </div>
           </div>
-          <div>
+          <div className="container-two">
             <div>
               <div>
                 <p>Timings:</p>

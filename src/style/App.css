@@ -130,7 +130,8 @@
   padding: 1rem;
 }
 
-.container {
+.container-one,
+.container-two {
   width: 100%;
   display: flex;
   flex-direction: column;
