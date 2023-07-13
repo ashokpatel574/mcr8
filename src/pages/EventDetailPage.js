@@ -36,6 +36,7 @@ const EventDetailPage = () => {
       price,
       speakers,
     } = eventDetails;
+
     return (
       <>
         <h2>Meet Ups</h2>
@@ -113,13 +114,15 @@ const EventDetailPage = () => {
                   ))}
               </ul>
             </div>
-            <div>
-              {rsvpState ? (
-                <button>Already RSVPed!</button>
-              ) : (
-                <button onClick={rsvphandler}>RSVP</button>
-              )}
-            </div>
+            {Date.parse(new Date()) < Date.parse(eventEndTime) && (
+              <div>
+                {rsvpState ? (
+                  <button>Already RSVPed!</button>
+                ) : (
+                  <button onClick={rsvphandler}>RSVP</button>
+                )}
+              </div>
+            )}
           </div>
         </section>
       </>
